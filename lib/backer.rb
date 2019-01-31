@@ -18,3 +18,5 @@ class Backer
         @@backed_projects
     end
 end
+
+# Awesomeness provided by Kevin McMinnn and Ethan Roberts

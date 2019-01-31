@@ -13,3 +13,5 @@ class Project
         end
     end
 end
+
+# Awesomeness provided by Kevin McMinnn and Ethan Roberts
