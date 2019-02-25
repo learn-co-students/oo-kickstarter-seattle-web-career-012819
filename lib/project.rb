@@ -1,15 +1,21 @@
 class Project
-  attr_accessor :backers
-  attr_reader :title
+  attr_reader :title, :backers
+  @@all = []
 
   def initialize(title)
     @title = title
     @backers = []
   end
 
+  def self.all
+    @@all
+  end
+
+  # accepts a Backer as an argument and stores it in a backers array
   def add_backer(backer)
-    @backers << backer
+    backers << backer
+
+    # adds the project to the backer's backed_projects array
     backer.backed_projects << self
-    # self refering to the instance this method is acting on
   end
 end
